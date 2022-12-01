@@ -429,6 +429,13 @@ footer {
   .tech--content {
     align-items: center;
   }
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer > div {
+    width: 40%;
+  }
 
   .conic-custom,
   .conic,
