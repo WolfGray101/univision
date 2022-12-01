@@ -417,10 +417,10 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 999px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   header,
   main {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
   }
   .header,
@@ -429,7 +429,8 @@ footer {
   .tech--content {
     align-items: center;
   }
-  .footer {
+  .footer,
+  .sevices--content {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -448,10 +449,10 @@ footer {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   header,
   main {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
   }
   .header {
