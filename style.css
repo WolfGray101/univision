@@ -502,15 +502,15 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   .swiper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .slider-cards {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
   .slider-cards img{
-    width: 90%
+    width: 100%
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
