@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable:true,
-    dynamicBullets:true,
+    dynamicBullets:true
   },
 
   // Navigation arrows
@@ -20,39 +20,32 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-  //показываем кусочек следующего слайда
-  slidesPerView: 1.15,
-//отступ слайдеров
-  spaceBetween:0,
+   //показываем кусочек следующего слайда
+   slidesPerView: 1,
+   //отступ слайдеров
+     spaceBetween:5,
 
+  effect: 'cube',
+
+  cubeEffect : {
+    slideShadows: true,
+    shadow: true,
+    shadowOffset: 20,
+    shadowScale: 0.94
+  },
+  
 });
 
-
-let showAll = document.querySelectorAll('.show-all');
+let showAll = document.querySelector('.show-all');
 let cardItems = document.querySelectorAll('.cards__item');
-let cardItemsType = document.querySelectorAll('.cards__item--type');
-showAll[0].onclick = function () {
+showAll.onclick = function () {
   for (let elem of cardItems) {    
       elem.classList.toggle('show')
       if (elem.classList.contains('show')){
-      showAll[0].textContent= 'Скрыть' 
+      showAll.textContent= 'Скрыть' 
     } else {
-      showAll[0].textContent= 'Показать все'
+      showAll.textContent= 'Показать все'
       }
   }
 } 
-showAll[1].onclick = function () {
-  console.log("pressed button");
-  for (let elem of cardItemsType) {    
-      elem.classList.toggle('show')
-      if (elem.classList.contains('show')){
-      showAll[1].textContent= 'Скрыть' 
-    } else {
-      showAll[1].textContent= 'Показать все'
-      }
-  }
-} 
-
-
- 
 
