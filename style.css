@@ -514,7 +514,7 @@ footer {
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: -28px;
+    bottom: 0;
   }
 }
 
@@ -525,19 +525,19 @@ footer {
     border: #000 solid 1px;
   }   
   .swiper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .slider-cards {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
   .slider-cards img{
-    width: 90%
+    width: 100%
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: -28px;
+    bottom: 0;
   }
 
 }

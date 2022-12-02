@@ -21,18 +21,18 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
    //показываем кусочек следующего слайда
-   slidesPerView: 1,
+   slidesPerView: 3,
    //отступ слайдеров
      spaceBetween:5,
 
-  effect: 'cube',
+  // effect: 'cube',
 
-  cubeEffect : {
-    slideShadows: true,
-    shadow: true,
-    shadowOffset: 20,
-    shadowScale: 0.94
-  },
+  // cubeEffect : {
+  //   slideShadows: true,
+  //   shadow: true,
+  //   shadowOffset: 20,
+  //   shadowScale: 0.94
+  // },
     
 });
 
