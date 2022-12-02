@@ -33,7 +33,7 @@ const swiper = new Swiper('.swiper', {
     shadowOffset: 20,
     shadowScale: 0.94
   },
-  
+    
 });
 
 let showAll = document.querySelector('.show-all');
