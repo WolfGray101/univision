@@ -48,16 +48,22 @@ const swiper = new Swiper('.swiper', {
     
 });
 
-let showAll = document.querySelector('.show-all');
-let cardItems = document.querySelectorAll('.cards__item');
+
+
+let showAll = document.querySelector('.menu-button-burger');
+let cardItems = document.querySelectorAll('.modal-block');
 showAll.onclick = function () {
+  showAll.classList.toggle('rotate-burger')
+  console.log("click click click");
   for (let elem of cardItems) {    
+    elem.classList.toggle('modal-block')
+
       elem.classList.toggle('show')
-      if (elem.classList.contains('show')){
-      showAll.textContent= 'Скрыть' 
-    } else {
-      showAll.textContent= 'Показать все'
-      }
+    //   if (elem.classList.contains('show')){
+    //   showAll.textContent= 'Скрыть' 
+    // } else {
+    //   showAll.textContent= 'Показать все'
+    //   }
   }
 } 
 
