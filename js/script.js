@@ -25,6 +25,18 @@ const swiper = new Swiper('.swiper', {
    //отступ слайдеров
      spaceBetween:5,
 
+  breakpoints: {
+320:{
+  slidesPerView: 1,
+},
+567:{
+  slidesPerView: 2,
+},
+1100:{
+  slidesPerView: 3,
+},
+}
+
   // effect: 'cube',
 
   // cubeEffect : {
