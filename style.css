@@ -507,11 +507,16 @@ main {
     width: 100%;
     height: 100%;
   }
-  /* .icon-cam1 {
-    right: 5px;
-    bottom: -20px;
+  .icon-cam1 {
+    right: 10px;
+    bottom: 10px;
     width: 40px;
-  } */
+  }
+  .icon-cam {
+    right: 20px;
+    bottom: 10px;
+    width: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1099px) {
