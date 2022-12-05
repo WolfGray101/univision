@@ -52,13 +52,30 @@ const swiper = new Swiper('.swiper', {
 
 let showAll = document.querySelector('.menu-button-burger');
 let cardItems = document.querySelectorAll('.modal-block');
+let selectMenu = document.querySelectorAll('.modal-list');
+
+
+for (let listElem of selectMenu) {
+
+  listElem.onclick = function () {
+    console.log('click');
+    showAll.classList.toggle('rotate-burger')
+    for (let elem of cardItems) {    
+      elem.classList.toggle('modal-block')
+      elem.classList.toggle('show')
+    }
+  } 
+
+}
+
+
+
 showAll.onclick = function () {
+  
   showAll.classList.toggle('rotate-burger')
-  console.log("click click click");
   for (let elem of cardItems) {    
     elem.classList.toggle('modal-block')
-
-      elem.classList.toggle('show')
+    elem.classList.toggle('show')
     //   if (elem.classList.contains('show')){
     //   showAll.textContent= 'Скрыть' 
     // } else {
