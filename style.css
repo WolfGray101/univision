@@ -397,7 +397,7 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  transition: 1s linear;
+  transition: 0.5s linear;
   overflow: hidden;
 }
 
@@ -411,7 +411,7 @@ footer {
 .rotate-burger {
   rotate: 90deg;
   z-index: 1000;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 .show {
@@ -420,7 +420,7 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  transition: 0.5s linear;
+  transition: 0.15s linear;
   overflow: hidden;
   background-color: rgb(51, 51, 51, 0.9);
   display: flex;
@@ -471,6 +471,9 @@ main {
   }
   .menu-button-burger {
     align-self: center;
+  }
+  .contact {
+    width: 90%;
   }
   .contact a{
     font-size: 1.3rem;
