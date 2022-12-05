@@ -51,6 +51,9 @@ const swiper = new Swiper('.swiper', {
 
 
 let showAll = document.querySelector('.menu-button-burger');
+let body = document.querySelector('body');
+let dFix = document.querySelector('.d-fix');
+
 let cardItems = document.querySelectorAll('.modal-block');
 let selectMenu = document.querySelectorAll('.modal-list');
 
@@ -58,7 +61,8 @@ let selectMenu = document.querySelectorAll('.modal-list');
 for (let listElem of selectMenu) {
 
   listElem.onclick = function () {
-    console.log('click');
+  body.classList.toggle('d-fix')
+
     showAll.classList.toggle('rotate-burger')
     for (let elem of cardItems) {    
       elem.classList.toggle('modal-block')
@@ -71,7 +75,7 @@ for (let listElem of selectMenu) {
 
 
 showAll.onclick = function () {
-  
+  body.classList.toggle('d-fix')
   showAll.classList.toggle('rotate-burger')
   for (let elem of cardItems) {    
     elem.classList.toggle('modal-block')
